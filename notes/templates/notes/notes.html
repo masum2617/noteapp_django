@@ -10,8 +10,9 @@
                 <h5 class="card-title">{{ note.note_title }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ note.date_created}}</h6>
                 <p class="card-text ml-1">{{ note.note_content}}</p>
-                <a href="#" class="btn btn-secondary btn-sm mt-1 mb-1">Update</a>
-                <a href="#" class="btn btn-danger btn-sm mt-1 mb-1">Delete</a>
+                <a href="#" class="btn btn-secondary btn-sm mt-1 mb-1"><i class="far fa-edit mr-2"></i>Update</a>
+                <a href="#" class="btn btn-danger btn-sm mt-1 mb-1"><i class="far fa-trash-alt mr-2"></i>Delete</a>
+
             </div>
         </div>
     {% endfor %}

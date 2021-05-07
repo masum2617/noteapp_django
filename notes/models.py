@@ -9,7 +9,7 @@ from django.utils import timezone
 class Notes(models.Model):
     note_title = models.CharField(max_length=30)
     note_content = models.TextField()
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now=True)
     # creator = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):

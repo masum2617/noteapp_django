@@ -1,0 +1,17 @@
+
+{% extends 'notes/layout.html' %}
+{% block title %} Delete notes {% endblock %}
+
+{% block content %}
+
+<h2>Delete Notes</h2>
+<h3>{{object.note_title}}</h3>
+<div class="form-group">
+    <form method="POST" >
+        {% csrf_token %}
+        <h3>Are you confirm to delete "{{object.note_title}}"?</h3>
+        <button type="submit" class="btn  btn-outline-danger">Confirm</button>
+        <button type="submit" class="btn  btn-outline-warning"><a href="{% url 'notes-content' %}">Cancel</a></button>
+    </form>
+</div>
+{% endblock %}

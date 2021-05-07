@@ -1,13 +1,14 @@
-
 {% extends 'notes/layout.html' %}
+{% block title %} Add notes {% endblock %}
 
 {% block content %}
 
 <h2>Add Notes</h2>
-
-<form method="POST" >
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="form-group">
+    <form method="POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 {% endblock %}

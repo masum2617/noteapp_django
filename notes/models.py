@@ -2,13 +2,15 @@ from django.db import models
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django.utils import timezone
 
 # Create your models here.
 
 class Notes(models.Model):
     note_title = models.CharField(max_length=30)
     note_content = models.TextField()
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now=True)
+
     # creator = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):

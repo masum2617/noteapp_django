@@ -1,1 +1,1 @@
-alert("hello");
+alert("hello this my new js file updated");

@@ -5,7 +5,7 @@
 
 <div class="container">
     {% for note in notes %}
-        <div class="card box">
+        <div class="card box" draggable="true">
             <div class="card-body">
                 <h5 class="card-title">{{ note.note_title }}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">{{ note.date_created|date:"d M Y, f a"}}</h6>

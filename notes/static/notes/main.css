@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(206, 206, 206); 
+    
     margin: auto;
     box-sizing: border-box;
     
@@ -30,10 +30,11 @@ li {
 }
 
 .box {
-    width: 350px;
-    height: 200px;
+    width: 280px;
+    height: 180px;
     margin-bottom: 20px;
     margin-right: 10px;
+    cursor: pointer;
    
 }
 
@@ -90,7 +91,8 @@ nav ul li a {
 
     .box {
         margin-right: 10px;
-        background: rgb(95, 153, 149);
+       
+        height: 180px;
     }
 
 

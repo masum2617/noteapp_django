@@ -26,7 +26,11 @@
         </nav>
     </header>
 
-<div class="container">   
+
+    {% block bgImage %}{% endblock bgImage%} 
+
+<div class="container"> 
+    
      {% block content %} {% endblock %}
 
 </div>

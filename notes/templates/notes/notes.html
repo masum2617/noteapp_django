@@ -5,21 +5,20 @@
 
 
     {% for note in notes %}
-        <div class="card box " draggable="true">
+        <div class="card box ">
             
             <div class="card-body">
-                <div id="imp"></div>
-                <!-- <div><i class="fas fa-star icon"></i></div> -->
-                <!-- <i class="fas fa-star icon"></i> -->
+                
                 <h5 class="card-title">{{ note.note_title }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ note.date_created|date:"d M Y, f a"}}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">{{ note.date_created|date:"d M Y"}}</h6>
                 <p class="card-text ml-1">{{ note.note_content}}</p>
-                <a href="{% url 'notes-update' note.pk %}" class="btn btn-success btn-sm mt-1 mb-1"><i class="far fa-edit mr-2"></i>Update</a>
-                <a href="{% url 'notes-delete' note.pk %}" class="btn btn-danger btn-sm mt-1 mb-1"><i class="far fa-trash-alt mr-2"></i>Delete</a>
-                <button class="btn btn-outline-light btn-sm mt-1 mb-1 important">Important</button>
+                <a href="{% url 'notes-update' note.pk %}" class="btn btn-success btn-sm mt-1 mb-1"><i class="far fa-edit"></i>Update</a>
+                <a href="{% url 'notes-delete' note.pk %}" class="btn btn-danger btn-sm mt-1 mb-1"><i class="far fa-trash-alt"></i>Delete</a>
+                <button class="btn btn-outline-secondary btn-sm mt-1 mb-1 important">Important</button>
                 
             </div>
-            <!-- <div id="imp"><div class="myIcon"><i class="fas fa-star icon" aria-hidden="true"></i></div></div> -->
+            
+          
         </div>
     {% endfor %}
 

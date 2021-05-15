@@ -2,9 +2,9 @@
 {% extends 'notes/layout.html' %}
 
 {% block content %}
-
-<h2>Add Notes</h2>
-
+<div >
+    <h2 class="add_note_heading">Add Notes</h2>
+</div>
 <form method="POST" >
     {% csrf_token %}
     {{ form.as_p }}

@@ -2,16 +2,20 @@ body {
     
     margin: auto;
     box-sizing: border-box;
-    background: cornsilk;
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* 1vh = 1% of the view port.bodys height take at leas the entire height of the viewport*/
+   
    
     
 }
 
 li {
     list-style-type: none;
+}
+i {
+    margin-right: 2px;
 }
 
 .icon {
@@ -26,7 +30,8 @@ li {
 
 
 .borderStyle {
-    border : 2px solid rgb(167, 93, 93);
+    border : 3px solid rgb(167, 93, 93);
+    
 }
 
 .container {
@@ -51,7 +56,32 @@ li {
     margin-bottom: 20px;
     margin-right: 10px;
     /* cursor: pointer; */
-    background-color: burlywood;
+    background-color: rgba(149, 196, 196, 0.904);
+}
+
+#backgroundImage {
+    background-image: url('../notes/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    opacity: 0.96;
+    /* padding-bottom: 180px; */
+}
+
+.noteHead {
+    text-align: center;
+    margin-top: 10px;
+    color: mintcream;
+}
+
+#cancel a {
+    text-decoration: none;
+    /* color: rgb(255, 249, 249); */
+}
+#cancel:hover{
+    color:rgb(255, 249, 249); ;
 }
 
 form {
@@ -85,8 +115,14 @@ nav ul li a {
     
 }
 
+hr {
+   
+    background-color: rgb(255, 255, 255);
+}
+
 .footer {
-    background-color: rgb(66, 68, 68);
+    /* background-color: rgb(66, 68, 68); */
+    background-color: rgb(0, 59, 59);
     padding-top: 10px;
     color: ghostwhite;
     margin-top: auto;

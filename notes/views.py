@@ -1,14 +1,13 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse 
 from . models import Notes
 from django.views.generic import CreateView, UpdateView, DeleteView
 from django.contrib.auth.models import User
 from .forms import NoteForm
 from django.urls import reverse_lazy
 
-
 # Create your views here.
 def home(request):
+
     return render(request, 'notes/home.html')
 
 def notes(request):
@@ -17,6 +16,10 @@ def notes(request):
     }
     return render(request, 'notes/notes.html', context)
 
+def login(request):
+
+    return render(request, 'notes/home.html')
+    
 
 class addNotesView(CreateView):
     model = Notes

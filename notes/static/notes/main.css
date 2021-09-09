@@ -5,9 +5,6 @@ body {
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* 1vh = 1% of the view port.bodys height take at leas the entire height of the viewport*/
-   
-   
     
 }
 
@@ -55,7 +52,6 @@ i {
     height: 180px;
     margin-bottom: 20px;
     margin-right: 10px;
-    /* cursor: pointer; */
     background-color: rgba(149, 196, 196, 0.904);
 }
 
@@ -78,7 +74,7 @@ i {
 
 #cancel a {
     text-decoration: none;
-    /* color: rgb(255, 249, 249); */
+   
 }
 #cancel:hover{
     color:rgb(255, 249, 249); ;
@@ -87,6 +83,9 @@ i {
 form {
     max-width: 800px;
     margin: 15px auto;
+    background: rgb(199, 237, 240);
+    padding: 30px;
+    border-radius: 3px;
 }
 
 header {
@@ -120,50 +119,16 @@ hr {
     background-color: rgb(255, 255, 255);
 }
 
-.footer {
-    /* background-color: rgb(66, 68, 68); */
-    background-color: rgb(0, 59, 59);
-    padding-top: 10px;
-    color: ghostwhite;
-    margin-top: auto;
-    font-size: 0.8em;
-
-    display: flex;
-    flex-direction: column;
-    
-    
-}
 
 .bio, .contact {
     padding-top: 10px;
 }
 
-@media screen and (min-width: 700px){
-
-    .box {
-        margin-right: 10px;
-        
-        height: 180px;
-    }
-
-
+textarea {
+      height: 120px;
 }
-
-@media screen and (min-width: 1025px){
-
-    .footer {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .bio {
-        margin-right: auto;
-        padding-left: 20px;
-    }
-    .contact {
-        padding-right: 60px;
-    }
-
- 
+  
+.register {
+    margin-left: 35%;
+    height: 500px;
 }
-

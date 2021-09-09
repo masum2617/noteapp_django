@@ -1,0 +1,25 @@
+{% extends 'notes/layout.html' %}
+
+{% block log %}
+<div class="loginForm" style="margin-left:32%;">
+
+  <form action="{% url 'login' %}" method="POST">
+      {% csrf_token %}
+      <fieldset>
+
+        <label for="name">Username</label>
+        <input type="text" id="name" name="username">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="userpassword">
+         
+      </fieldset>
+        
+      <button type="submit" class="logSignBtn"><a href="{% url 'login' %}">Login</a></button>
+      
+    </form>
+
+
+</div>
+
+{% endblock %}
